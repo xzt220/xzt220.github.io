@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"xzt220.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="E. Sign on Fence  time limit per test: 4 seconds   memory limit per test: 256 megabytes   input: standard input   output: standard output   StatementBizon the Champion has recently finished painting">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Codeforces 484 E.Sign On Fence">
+<meta property="og:url" content="http://xzt220.github.io/2019/08/24/Codeforces-484-E-Sign-On-Fence/index.html">
+<meta property="og:site_name" content="xzt220&#39;s blog">
+<meta property="og:description" content="E. Sign on Fence  time limit per test: 4 seconds   memory limit per test: 256 megabytes   input: standard input   output: standard output   StatementBizon the Champion has recently finished painting">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://codeforces.com/predownloaded/3e/34/3e3455cba46d0175eab5c5fc33d930f792954761.png">
+<meta property="og:image" content="http://codeforces.com/predownloaded/fd/7e/fd7e6646d4992244b66780d5070204cc5e6592a3.png">
+<meta property="og:image" content="http://codeforces.com/predownloaded/b1/ef/b1efc818a1503ffc4cc60f63b349f2fec04ef9e9.png">
+<meta property="og:image" content="http://codeforces.com/predownloaded/51/69/5169db506e0d1639be9822103d7d0a01a60fe141.png">
+<meta property="article:published_time" content="2019-08-24T15:55:52.000Z">
+<meta property="article:modified_time" content="2020-07-31T03:08:22.338Z">
+<meta property="article:author" content="xzt220">
+<meta property="article:tag" content="Codeforces">
+<meta property="article:tag" content="可持久化线段树">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://codeforces.com/predownloaded/3e/34/3e3455cba46d0175eab5c5fc33d930f792954761.png">
+
+<link rel="canonical" href="http://xzt220.github.io/2019/08/24/Codeforces-484-E-Sign-On-Fence/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Codeforces 484 E.Sign On Fence | xzt220's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="xzt220's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">xzt220's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">no one knows how to pronounce</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2019/08/24/Codeforces-484-E-Sign-On-Fence/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="xzt220">
+      <meta itemprop="description" content="BYR">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xzt220's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Codeforces 484 E.Sign On Fence
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-24 23:55:52" itemprop="dateCreated datePublished" datetime="2019-08-24T23:55:52+08:00">2019-08-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-31 11:08:22" itemprop="dateModified" datetime="2020-07-31T11:08:22+08:00">2020-07-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="E-Sign-on-Fence"><a href="#E-Sign-on-Fence" class="headerlink" title=" E. Sign on Fence "></a><center> E. Sign on Fence </center></h1><center> time limit per test: 4 seconds </center>
+<center> memory limit per test: 256 megabytes </center>
+<center> input: standard input </center>
+<center> output: standard output </center>
+
+<h2 id="Statement"><a href="#Statement" class="headerlink" title="Statement"></a>Statement</h2><p>Bizon the Champion has recently finished painting his wood fence. The fence consists of a sequence of  $n$  panels of  1  meter width and of arbitrary height. The  $i$-th panel’s height is  $h_{i}$  meters. The adjacent planks follow without a gap between them.</p>
+<p>After Bizon painted the fence he decided to put a “for sale” sign on it. The sign will be drawn on a rectangular piece of paper and placed on the fence so that the sides of the sign are parallel to the fence panels and are also aligned with the edges of some panels. Bizon the Champion introduced the following constraints for the sign position:</p>
+<ol>
+<li>The width of the sign should be exactly  $w$  meters.</li>
+<li>The sign must fit into the segment of the fence from the  $l$-th to the  $r$-th panels, inclusive (also, it can’t exceed the fence’s bound in vertical direction).</li>
+</ol>
+<p>The sign will be really pretty, So Bizon the Champion wants the sign’s height to be as large as possible.</p>
+<p>You are given the description of the fence and several queries for placing sign. For each query print the maximum possible height of the sign that can be placed on the corresponding segment of the fence with the given fixed width of the sign.<br><a id="more"></a></p>
+<h2 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h2><p>The first line of the input contains integer  $n$ — the number of panels in the fence ($1 \leq n \leq 10^5$).</p>
+<p>The second line contains  $n$  space-separated integers  $h_{i}$, — the heights of the panels ($1 \leq  h_i ≤ 10^9$).</p>
+<p>The third line contains an integer  $m$ — the number of the queries ($1 \leq  m \leq 10^5$).</p>
+<p>The next  $m$  lines contain the descriptions of the queries, each query is represented by three integers  $l$,  $r$  and  $w$  ($1 \leq  l \leq r \leq n,  1 \leq w \leq r- l + 1$) — the segment of the fence and the width of the sign respectively.</p>
+<h2 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h2><p>For each query print the answer on a separate line — the maximum height of the sign that can be put in the corresponding segment of the fence with all the conditions being satisfied.</p>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><h3 id="input"><a href="#input" class="headerlink" title="input"></a>input</h3><p>5<br>1 2 2 3 3<br>3<br>2 5 3<br>2 5 2<br>1 5 5  </p>
+<h3 id="output"><a href="#output" class="headerlink" title="output"></a>output</h3><p>2<br>3<br>1  </p>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>The fence described in the sample looks as follows:</p>
+<p><img src="http://codeforces.com/predownloaded/3e/34/3e3455cba46d0175eab5c5fc33d930f792954761.png" alt=""></p>
+<p>The possible positions for the signs for all queries are given below.</p>
+<p><img src="http://codeforces.com/predownloaded/fd/7e/fd7e6646d4992244b66780d5070204cc5e6592a3.png" alt=""></p>
+<p>The optimal position of the sign for the first query.</p>
+<p><img src="http://codeforces.com/predownloaded/b1/ef/b1efc818a1503ffc4cc60f63b349f2fec04ef9e9.png" alt=""></p>
+<p>The optimal position of the sign for the second query.</p>
+<p><img src="http://codeforces.com/predownloaded/51/69/5169db506e0d1639be9822103d7d0a01a60fe141.png" alt=""></p>
+<p>The optimal position of the sign for the third query.</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>题意就是给一排围栏，每个围栏都有一个高度，查询区间$\left[l, r\right]$之间长度为$w$的子区间的最小高度的最大值。<br>首先，这个最大值肯定是这个区间里的围栏的某个高度，如果是一个未出现过的高度，显然能有更高的高度满足条件。<br>那么就可以考虑在离散化后的高度数组里二分答案，然后check一下这个区间里是否有连续$w$个围栏的高度大于等于这个答案。<br>因为答案肯定是出现过的高度这个性质，那么可以考虑以高度建一棵可持久化线段树，先将高度数组离散化排好序，第$i$个版本的线段树代表的是下标位置的围栏的高度是否大于等于$h_i$，然后保存区间前缀最长连续1、后缀最长连续1、区间最长连续1。第$i$个版本由第$i-1$个版本再加上几个单点修改得来。<br>查询就保存区间最长前缀及最长后缀进行合并，合并过程更新一下答案。<br>说起来容易想起来难。我菜爆了。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">1e5</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">int</span> n, a[N], h[N], root[N], tol, ans;</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; G[N];</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Seg</span> &#123;</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">Tree</span> &#123;</span></span><br><span class="line">		<span class="keyword">int</span> lp, rp, len, pre, suf, mx;</span><br><span class="line">	&#125; tree[N * <span class="number">25</span>];</span><br><span class="line">	<span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">pushup</span><span class="params">(<span class="keyword">int</span> p)</span> </span>&#123;</span><br><span class="line">		tree[p].pre = tree[tree[p].lp].pre + (tree[tree[p].lp].pre == tree[tree[p].lp].len ? tree[tree[p].rp].pre : <span class="number">0</span>);</span><br><span class="line">		tree[p].suf = tree[tree[p].rp].suf + (tree[tree[p].rp].suf == tree[tree[p].rp].len ? tree[tree[p].lp].suf : <span class="number">0</span>);</span><br><span class="line">		tree[p].mx = max(tree[tree[p].lp].suf + tree[tree[p].rp].pre, max(tree[tree[p].lp].mx, tree[tree[p].rp].mx));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> &amp;p, <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">		p = ++tol;</span><br><span class="line">		tree[p].len = tree[p].pre = tree[p].suf = tree[p].mx = r - l + <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (l == r) <span class="keyword">return</span>;</span><br><span class="line">		<span class="keyword">int</span> mid = l + r &gt;&gt; <span class="number">1</span>;</span><br><span class="line">		build(tree[p].lp, l, mid);</span><br><span class="line">		build(tree[p].rp, mid + <span class="number">1</span>, r);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">int</span> &amp;p, <span class="keyword">int</span> q, <span class="keyword">int</span> l, <span class="keyword">int</span> r, <span class="keyword">int</span> pos)</span> </span>&#123;</span><br><span class="line">		tree[p = ++tol] = tree[q];</span><br><span class="line">		<span class="keyword">if</span> (l == r) &#123;</span><br><span class="line">			tree[p].pre = tree[p].suf = tree[p].mx = <span class="number">0</span>;</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">int</span> mid = l + r &gt;&gt; <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (pos &lt;= mid) update(tree[p].lp, tree[q].lp, l, mid, pos);</span><br><span class="line">		<span class="keyword">else</span> update(tree[p].rp, tree[q].rp, mid + <span class="number">1</span>, r, pos);</span><br><span class="line">		pushup(p);</span><br><span class="line">	&#125;</span><br><span class="line">	pair&lt;int, int&gt; query(int p, int l, int r, int x, int y) &#123;</span><br><span class="line">		<span class="keyword">if</span> (x &lt;= l &amp;&amp; y &gt;= r) &#123;</span><br><span class="line">			ans = max(ans, tree[p].mx);</span><br><span class="line">			<span class="keyword">return</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;(tree[p].pre, tree[p].suf);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">int</span> mid = l + r &gt;&gt; <span class="number">1</span>;</span><br><span class="line">		pair&lt;int, int&gt; L(0, 0), R(0, 0);</span><br><span class="line">		<span class="keyword">if</span> (x &lt;= mid) L = query(tree[p].lp, l, mid, x, y);</span><br><span class="line">		<span class="keyword">if</span> (y &gt; mid) R = query(tree[p].rp, mid + <span class="number">1</span>, r, x, y);</span><br><span class="line">		ans = max(ans, L.second + R.first); </span><br><span class="line">		<span class="keyword">return</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;(L.first + (L.first == tree[tree[p].lp].len ? R.first : <span class="number">0</span>),</span><br><span class="line">							  R.second + (R.second == tree[tree[p].rp].len ? L.second : <span class="number">0</span>));</span><br><span class="line">	&#125;</span><br><span class="line">&#125; seg;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a[i]), h[i] = a[i];</span><br><span class="line">	sort(h + <span class="number">1</span>, h + <span class="number">1</span> + n);</span><br><span class="line">	<span class="keyword">int</span> cnt = unique(h + <span class="number">1</span>, h + <span class="number">1</span> + n) - h - <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> pos = lower_bound(h + <span class="number">1</span>, h + <span class="number">1</span> + cnt, a[i]) - h;</span><br><span class="line">		G[pos].push_back(i);</span><br><span class="line">	&#125;</span><br><span class="line">	seg.build(root[<span class="number">1</span>], <span class="number">1</span>, n);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= cnt; i++) &#123;</span><br><span class="line">		root[i] = root[i - <span class="number">1</span>];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> x: G[i - <span class="number">1</span>]) &#123;</span><br><span class="line">			seg.update(root[i], root[i], <span class="number">1</span>, n, x);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> q;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;q);</span><br><span class="line">	<span class="keyword">while</span> (q--) &#123;</span><br><span class="line">		<span class="keyword">int</span> x, y, w;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;x, &amp;y, &amp;w);</span><br><span class="line">		<span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> l = <span class="number">1</span>, r = cnt;</span><br><span class="line">		<span class="keyword">while</span> (l &lt;= r) &#123;</span><br><span class="line">			<span class="keyword">int</span> mid = (l + r + <span class="number">1</span>) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">			ans = <span class="number">0</span>;</span><br><span class="line">			seg.query(root[mid], <span class="number">1</span>, n, x, y);</span><br><span class="line">			<span class="keyword">if</span> (ans &gt;= w) l = mid + <span class="number">1</span>, res = mid;</span><br><span class="line">			<span class="keyword">else</span> r = mid - <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, h[res]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Codeforces/" rel="tag"># Codeforces</a>
+              <a href="/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91/" rel="tag"># 可持久化线段树</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/08/24/HDU-6703-array/" rel="prev" title="HDU 6703 array">
+      <i class="fa fa-chevron-left"></i> HDU 6703 array
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/08/25/2019-Nowcoder-Multi-University-Training-Contest-1-H-XOR/" rel="next" title="2019 Nowcoder Multi-University Training Contest 1 H-XOR">
+      2019 Nowcoder Multi-University Training Contest 1 H-XOR <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#E-Sign-on-Fence"><span class="nav-text"> E. Sign on Fence </span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Statement"><span class="nav-text">Statement</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Input"><span class="nav-text">Input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Output"><span class="nav-text">Output</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Examples"><span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#input"><span class="nav-text">input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#output"><span class="nav-text">output</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Note"><span class="nav-text">Note</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-text">Solution</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="xzt220"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">xzt220</p>
+  <div class="site-description" itemprop="description">BYR</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xzt220" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xzt220" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xzt220</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">156k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:22</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
