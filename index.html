@@ -1,1277 +1,167 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xzt220.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="BYR">
-<meta property="og:type" content="website">
-<meta property="og:title" content="xzt220&#39;s blog">
-<meta property="og:url" content="http://xzt220.github.io/index.html">
-<meta property="og:site_name" content="xzt220&#39;s blog">
-<meta property="og:description" content="BYR">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="xzt220">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://xzt220.github.io/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>xzt220's blog</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>xzt220's blog - no one knows how to pronounce</title><meta name="description" content="BYR"><meta name="author" content="xzt220"><meta name="copyright" content="xzt220"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://xzt220.github.io/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="xzt220's blog"><meta property="og:url" content="http://xzt220.github.io/"><meta property="og:site_name" content="xzt220's blog"><meta property="og:description" content="BYR"><meta property="og:image" content="http://xzt220.github.io/img/avatar.png"><meta property="article:published_time" content="2020-08-01T08:10:41.379Z"><meta property="article:modified_time" content="2020-08-01T08:10:41.379Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
   }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="xzt220's blog" type="application/atom+xml">
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">xzt220's blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">no one knows how to pronounce</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2020/07/31/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="xzt220">
-      <meta itemprop="description" content="BYR">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xzt220's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/31/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/" class="post-title-link" itemprop="url">面试准备</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-07-31 11:22:39" itemprop="dateCreated datePublished" datetime="2020-07-31T11:22:39+08:00">2020-07-31</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-01 12:51:34" itemprop="dateModified" datetime="2020-08-01T12:51:34+08:00">2020-08-01</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>993</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>现在就是很紧张，非常紧张。投了腾讯、百度（内推）都没人要，只有字节让我面试，非常害怕，非常害怕。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/07/31/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2020/05/24/Effective-Modern-C-auto/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="xzt220">
-      <meta itemprop="description" content="BYR">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xzt220's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/24/Effective-Modern-C-auto/" class="post-title-link" itemprop="url">Effective Modern C++ auto</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-24 21:46:52" itemprop="dateCreated datePublished" datetime="2020-05-24T21:46:52+08:00">2020-05-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 11:08:22" itemprop="dateModified" datetime="2020-07-31T11:08:22+08:00">2020-07-31</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.4k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>看完觉得，能用 <code>auto</code> 就尽量用 <code>auto</code> 就对了。。。<br>以下大部分内容来自链接中的内容，加有少部分自己的理解。<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/24/Effective-Modern-C-auto/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2020/05/23/Effective-Modern-C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="xzt220">
-      <meta itemprop="description" content="BYR">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xzt220's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/23/Effective-Modern-C/" class="post-title-link" itemprop="url">Effective Modern C++ 类型推断</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-23 00:16:49" itemprop="dateCreated datePublished" datetime="2020-05-23T00:16:49+08:00">2020-05-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 11:08:22" itemprop="dateModified" datetime="2020-07-31T11:08:22+08:00">2020-07-31</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>5.1k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>5 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>自从两个月前决定不打 ICPC 之后，学习效率极其低下，啥都学不进去，现在离期末还有不到一个月，但就是不想复习。所以来康康<a href="https://downdemo.gitbook.io/effective-modern-cpp/" target="_blank" rel="noopener">这本书</a>（太穷，买不起书，其实是别人的笔记？），学习一点点东西。以下大部分内容来自链接中的内容，加有少部分自己的理解。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/23/Effective-Modern-C/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2019/10/04/Tinkoff-Internship-Warmup-Round-2018-and-Codeforces-Round-475-Div-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="xzt220">
-      <meta itemprop="description" content="BYR">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xzt220's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/04/Tinkoff-Internship-Warmup-Round-2018-and-Codeforces-Round-475-Div-1/" class="post-title-link" itemprop="url">Tinkoff Internship Warmup Round 2018 and Codeforces Round #475 (Div. 1)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-10-04 21:07:57" itemprop="dateCreated datePublished" datetime="2019-10-04T21:07:57+08:00">2019-10-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 11:08:22" itemprop="dateModified" datetime="2020-07-31T11:08:22+08:00">2020-07-31</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>8.2k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>7 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="A-Alternating-Sum"><a href="#A-Alternating-Sum" class="headerlink" title="A. Alternating Sum"></a>A. Alternating Sum</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/10/04/Tinkoff-Internship-Warmup-Round-2018-and-Codeforces-Round-475-Div-1/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2019/10/03/Educational-Codeforces-Round-47-Rated-for-Div-2-G-Allowed-Letters/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="xzt220">
-      <meta itemprop="description" content="BYR">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xzt220's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/03/Educational-Codeforces-Round-47-Rated-for-Div-2-G-Allowed-Letters/" class="post-title-link" itemprop="url">Educational Codeforces Round 47 (Rated for Div. 2) G. Allowed Letters</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-10-03 10:00:21" itemprop="dateCreated datePublished" datetime="2019-10-03T10:00:21+08:00">2019-10-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 11:08:22" itemprop="dateModified" datetime="2020-07-31T11:08:22+08:00">2020-07-31</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="G-Allowed-Letters"><a href="#G-Allowed-Letters" class="headerlink" title="G. Allowed Letters"></a><center>G. Allowed Letters</center></h1><center>time limit per test: 2 seconds</center>
-<center>memory limit per test: 256 megabytes</center>
-<center>input: standard input</center>
-<center>output: standard output</center>
-
-<p>Polycarp has just launched his new startup idea. The niche is pretty free and the key vector of development sounds really promising, so he easily found himself some investors ready to sponsor the company. However, he is yet to name the startup!</p>
-<p>Actually, Polycarp has already came up with the name but some improvement to it will never hurt. So now he wants to swap letters at some positions in it to obtain the better name. It isn’t necessary for letters to be adjacent.</p>
-<p>In addition, each of the investors has chosen some index in the name and selected a set of letters that can go there. Indices chosen by different investors are pairwise distinct. If some indices aren’t chosen by any investor then any letter can go there.</p>
-<p>Finally, Polycarp is sure that the smallest lexicographically name is the best. (Like why do you think Google decided to become Alphabet?)</p>
-<p>More formally, you are given a string consisting of lowercase Latin letters from “a” to “f”. You can swap letters at any positions arbitrary number of times (zero swaps is also possible).</p>
-<p>What is the smallest lexicographically name you can obtain such that the letter at every position is among the allowed letters?</p>
-<p>If Polycarp can’t produce any valid name then print “Impossible”.<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/10/03/Educational-Codeforces-Round-47-Rated-for-Div-2-G-Allowed-Letters/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2019/10/03/Loj-6062-%E3%80%8C2017-%E5%B1%B1%E4%B8%9C%E4%B8%80%E8%BD%AE%E9%9B%86%E8%AE%AD-Day2%E3%80%8DPair/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="xzt220">
-      <meta itemprop="description" content="BYR">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xzt220's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/03/Loj-6062-%E3%80%8C2017-%E5%B1%B1%E4%B8%9C%E4%B8%80%E8%BD%AE%E9%9B%86%E8%AE%AD-Day2%E3%80%8DPair/" class="post-title-link" itemprop="url">Loj #6062. 「2017 山东一轮集训 Day2」Pair</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-10-03 09:24:52" itemprop="dateCreated datePublished" datetime="2019-10-03T09:24:52+08:00">2019-10-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 11:08:22" itemprop="dateModified" datetime="2020-07-31T11:08:22+08:00">2020-07-31</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给出一个长度为 $n$ 的数列 {$a_i$} 和一个长度为 $m$ 的数列 {$b_i$}，求 {$a_i$} 有多少个长度为 $m$ 的连续子数列能与  匹配。</p>
-<p>两个数列可以匹配，当且仅当存在一种方案，使两个数列中的数可以两两配对，两个数可以配对当且仅当它们的和不小于 $h$。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/10/03/Loj-6062-%E3%80%8C2017-%E5%B1%B1%E4%B8%9C%E4%B8%80%E8%BD%AE%E9%9B%86%E8%AE%AD-Day2%E3%80%8DPair/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2019/10/02/Avito-Code-Challenge-2018/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="xzt220">
-      <meta itemprop="description" content="BYR">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xzt220's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/02/Avito-Code-Challenge-2018/" class="post-title-link" itemprop="url">Avito Code Challenge 2018</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-10-02 02:27:33" itemprop="dateCreated datePublished" datetime="2019-10-02T02:27:33+08:00">2019-10-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 11:08:22" itemprop="dateModified" datetime="2020-07-31T11:08:22+08:00">2020-07-31</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>9.4k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>9 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="A-Antipalindrome"><a href="#A-Antipalindrome" class="headerlink" title="A. Antipalindrome"></a>A. Antipalindrome</h2><p>直接暴力判断就行了。<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/10/02/Avito-Code-Challenge-2018/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2019/09/29/AtCoder-Grand-Contest-020/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="xzt220">
-      <meta itemprop="description" content="BYR">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xzt220's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/09/29/AtCoder-Grand-Contest-020/" class="post-title-link" itemprop="url">AtCoder Grand Contest 020</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-29 21:35:22" itemprop="dateCreated datePublished" datetime="2019-09-29T21:35:22+08:00">2019-09-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 11:08:22" itemprop="dateModified" datetime="2020-07-31T11:08:22+08:00">2020-07-31</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>tourist’s contest…ssfd<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/09/29/AtCoder-Grand-Contest-020/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2019/09/29/51nod-1803-%E6%A3%AE%E6%9E%97%E7%9B%B4%E5%BE%84/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="xzt220">
-      <meta itemprop="description" content="BYR">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xzt220's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/09/29/51nod-1803-%E6%A3%AE%E6%9E%97%E7%9B%B4%E5%BE%84/" class="post-title-link" itemprop="url">51nod 1803 森林直径</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-29 09:26:17" itemprop="dateCreated datePublished" datetime="2019-09-29T09:26:17+08:00">2019-09-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 11:08:22" itemprop="dateModified" datetime="2020-07-31T11:08:22+08:00">2020-07-31</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.4k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="1803-森林直径"><a href="#1803-森林直径" class="headerlink" title="1803 森林直径"></a><a href="http://www.51nod.com/Challenge/Problem.html#problemId=1803" target="_blank" rel="noopener">1803 森林直径</a></h1><p>2.0 秒 / 131,072.0 KB / 80 分 / <a href="http://www.51nod.com/Challenge/ProblemList.html#level=6&amp;isAsc=false" target="_blank" rel="noopener">[5级题]</a></p>
-<p>LYK最近在练习数据结构。</p>
-<p>这次它遇到了一棵有n个节点且没有边权没有点权的树。</p>
-<p>一棵树的直径被定义为最远的两个点的距离，LYK想计算出这棵树的直径，但这显然太简单了。</p>
-<p>于是LYK只挑选出其中编号为L到R的边，将其余边在树中删去，那么这棵树就变成了一棵森林。</p>
-<p>我们定义一棵森林的直径为可到达的最远的两个点的距离。（若没有可到达的点对，则森林的直径为0）。</p>
-<p>LYK想知道对于Q组询问，每组询问给出L和R，这棵森林的直径是多少，为了方便起见，你只需输出所有答案的和就可以了。</p>
-<p>由于LYK不知道怎么生成一棵树，于是它打算采取以下方式输出这棵树的所有边。</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (int <span class="built_in">i</span>=<span class="number">2</span>; <span class="built_in">i</span>&lt;=n; <span class="built_in">i</span>++) printf(<span class="string">"%d %d\n"</span>,<span class="built_in">rand</span>()<span class="comment">%(i-1)+1,i);</span></span><br></pre></td></tr></table></figure>
-<p>在样例中，4组询问的答案分别为1,2,3,3，因此应当输出9。<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/09/29/51nod-1803-%E6%A3%AE%E6%9E%97%E7%9B%B4%E5%BE%84/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://xzt220.github.io/2019/09/29/Codechef-July-Challenge-2019-Hit-the-Coconuts/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="xzt220">
-      <meta itemprop="description" content="BYR">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xzt220's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/09/29/Codechef-July-Challenge-2019-Hit-the-Coconuts/" class="post-title-link" itemprop="url">Codechef July Challenge 2019 Hit the Coconuts</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-29 09:10:34" itemprop="dateCreated datePublished" datetime="2019-09-29T09:10:34+08:00">2019-09-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-31 11:08:22" itemprop="dateModified" datetime="2020-07-31T11:08:22+08:00">2020-07-31</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Problem-Statement"><a href="#Problem-Statement" class="headerlink" title="Problem Statement"></a>Problem Statement</h2><p>Nikki has $N$ coconuts, she wants to prepare a special coconut soup for her best friend Mansi. In order to make this soup, she has to break $Z$ coconuts. For each coconut, there is a fixed number of times Nikki needs to hit it if she wants it to break. Nikki can only hit one coconut at the same time.<br>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/09/29/Codechef-July-Challenge-2019-Hit-the-Coconuts/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
     }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
       }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-08-01 16:10:41'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="xzt220's blog" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">45</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">33</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">xzt220's blog</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">xzt220's blog</h1><div id="site_subtitle"><span id="subtitle"></span></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/31/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/" title="面试准备">     <img class="post_bg" data-lazy-src="/2020/07/31/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/avatar.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="面试准备"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/31/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/" title="面试准备">面试准备</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-31T03:22:39.000Z" title="发表于 2020-07-31 11:22:39">2020-07-31</time></span></div><div class="content">前言现在就是很紧张，非常紧张。投了腾讯、百度（内推）都没人要，只有字节让我面试，非常害怕，非常害怕。
 
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
+语言相关
+C++ static 作用
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="xzt220"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">xzt220</p>
-  <div class="site-description" itemprop="description">BYR</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">45</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">33</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/xzt220" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xzt220" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-  </div>
+静态局部变量：静态局部变量保存在静态存储区，而不是保存在栈中，第一次调用该函数进行初始化，每次的值保存到下一次调用。
+静态全局变量：静态全局变量保证变量不会被其他文件所访问，修改。其他文件中可以使用相同名字的变量，不会发生冲突。
+静态函数：函数只能在该程序中调用，不能被同一项目中的其他文件调用。
+静态成员变量：用static修饰类的数据成员实际使其成为类的全局变量，会被类的所有对象共享，包括派生类的对象。因此，static成员必须在类外进行初始化(初始化格式： int base::var = 10;)，调用时可以不需要具体类对象，如使用 base::var 的方式调用。
+静态成员函数：同静态成员变量，所有对象共享该函数，不含 this 指针。也可以独立访问 base::func()。在实现中不能直接引用类中说明的非静态成员，可以引用类中的静态成员。
 
 
+C++ 虚函数作用及实现
 
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
+作用：实现了多态的机制。
+实现：虚函数表和虚表指针
 
 
-      </div>
-    </main>
+C++  ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/05/24/Effective-Modern-C-auto/" title="Effective Modern C++ auto">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Effective Modern C++ auto"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/05/24/Effective-Modern-C-auto/" title="Effective Modern C++ auto">Effective Modern C++ auto</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-05-24T13:46:52.000Z" title="发表于 2020-05-24 21:46:52">2020-05-24</time></span></div><div class="content">看完觉得，能用 auto 就尽量用 auto 就对了。。。以下大部分内容来自链接中的内容，加有少部分自己的理解。
+auto05 用 auto 替代显式类型声明
+auto 声明的变量必须初始化，所以使用 auto 声明变量可以忘记初始化
+对于名称非常长的类型，如迭代器等，用 auto 省力
+lambda 生成的闭包类型是编译器内部的匿名类型，使用 auto 推断就没有这个问题
+如果不使用 auto，可以改用 std::function123auto f = [](auto&amp; x, auto&amp; y) &#123; return x &lt; y; &#125;;// std::function的模板参数中不能使用autostd::function&lt;bool(int&amp;, int&amp;)&gt; f = [](auto&amp; x, auto&amp; y) &#123; return x &lt; y; &#125;;
+除了明显的语法冗长和不能利用 auto 参数的缺点，std::function 与 auto 的最大区别在于，auto 和闭包类型一致，内 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/05/23/Effective-Modern-C/" title="Effective Modern C++ 类型推断">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Effective Modern C++ 类型推断"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/05/23/Effective-Modern-C/" title="Effective Modern C++ 类型推断">Effective Modern C++ 类型推断</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-05-22T16:16:49.000Z" title="发表于 2020-05-23 00:16:49">2020-05-23</time></span></div><div class="content">自从两个月前决定不打 ICPC 之后，学习效率极其低下，啥都学不进去，现在离期末还有不到一个月，但就是不想复习。所以来康康这本书（太穷，买不起书，其实是别人的笔记？），学习一点点东西。以下大部分内容来自链接中的内容，加有少部分自己的理解。
 
-    <footer class="footer">
-      <div class="footer-inner">
-        
+类型推断01 模板类型推断机制
+模板的形式可以看成如下伪代码12template&lt;typename T&gt;void f(ParamType x);
+调用该函数可看成1f(expr);
+编译期间，编译器用 expr 推断 T 和 ParamType，实际上两者通常不同。
 
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">xzt220</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
-    </span>
-    <span title="站点总字数">157k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="站点阅读时长">2:23</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
-
-        
+T 的类型推断与 expr 和 ParamType 相关
 
 
+情形1：ParamType 不是引用或指针
+丢弃 expr 的 top-level cv 限定符和引用限定符，最后得到的 expr 的类型就是 T 和 ParamType12345678910111213141516171819202122232425262728template&lt;typename T&gt;void f(T x);int a;const int b;const int&amp; c;in ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/10/04/Tinkoff-Internship-Warmup-Round-2018-and-Codeforces-Round-475-Div-1/" title="Tinkoff Internship Warmup Round 2018 and Codeforces Round #475 (Div. 1)">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Tinkoff Internship Warmup Round 2018 and Codeforces Round #475 (Div. 1)"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/10/04/Tinkoff-Internship-Warmup-Round-2018-and-Codeforces-Round-475-Div-1/" title="Tinkoff Internship Warmup Round 2018 and Codeforces Round #475 (Div. 1)">Tinkoff Internship Warmup Round 2018 and Codeforces Round #475 (Div. 1)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-10-04T13:07:57.000Z" title="发表于 2019-10-04 21:07:57">2019-10-04</time></span></div><div class="content">A. Alternating Sum
+就是个等比数列，特判公比为 $1$ 的情况即可。
+1234567891011121314151617181920212223242526272829303132333435363738394041424344#include &lt;bits/stdc++.h&gt;using namespace std;const int MOD = 1e9 + 9;const int N = 1e5 + 7;int qp(int a, int b = MOD - 2) &#123;	int ans = 1;	while (b) &#123;		if (b &amp; 1) ans = 1LL * ans * a % MOD;		a = 1LL * a * a % MOD;		b &gt;&gt;= 1;	&#125;	return ans;&#125;int M(int a) &#123;	if (a &lt; 0) a += MOD;	if (a &gt;= MOD) a -= MOD;	return a;&#125;char s[N];int main() ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/10/03/Educational-Codeforces-Round-47-Rated-for-Div-2-G-Allowed-Letters/" title="Educational Codeforces Round 47 (Rated for Div. 2) G. Allowed Letters">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Educational Codeforces Round 47 (Rated for Div. 2) G. Allowed Letters"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/10/03/Educational-Codeforces-Round-47-Rated-for-Div-2-G-Allowed-Letters/" title="Educational Codeforces Round 47 (Rated for Div. 2) G. Allowed Letters">Educational Codeforces Round 47 (Rated for Div. 2) G. Allowed Letters</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-10-03T02:00:21.000Z" title="发表于 2019-10-03 10:00:21">2019-10-03</time></span></div><div class="content">G. Allowed Letterstime limit per test: 2 seconds
+memory limit per test: 256 megabytes
+input: standard input
+output: standard output
 
+Polycarp has just launched his new startup idea. The niche is pretty free and the key vector of development sounds really promising, so he easily found himself some investors ready to sponsor the company. However, he is yet to name the startup!
+Actually, Polycarp has already came up with the name but some improvement to it will never hurt. So now he wants to swap l ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/10/03/Loj-6062-%E3%80%8C2017-%E5%B1%B1%E4%B8%9C%E4%B8%80%E8%BD%AE%E9%9B%86%E8%AE%AD-Day2%E3%80%8DPair/" title="Loj #6062. 「2017 山东一轮集训 Day2」Pair">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Loj #6062. 「2017 山东一轮集训 Day2」Pair"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/10/03/Loj-6062-%E3%80%8C2017-%E5%B1%B1%E4%B8%9C%E4%B8%80%E8%BD%AE%E9%9B%86%E8%AE%AD-Day2%E3%80%8DPair/" title="Loj #6062. 「2017 山东一轮集训 Day2」Pair">Loj #6062. 「2017 山东一轮集训 Day2」Pair</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-10-03T01:24:52.000Z" title="发表于 2019-10-03 09:24:52">2019-10-03</time></span></div><div class="content">题目描述给出一个长度为 $n$ 的数列 {$a_i$} 和一个长度为 $m$ 的数列 {$b_i$}，求 {$a_i$} 有多少个长度为 $m$ 的连续子数列能与  匹配。
+两个数列可以匹配，当且仅当存在一种方案，使两个数列中的数可以两两配对，两个数可以配对当且仅当它们的和不小于 $h$。
 
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-          load: ['[tex]/mhchem'],
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-          packages: {'[+]': ['mhchem']},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
-
-  
-
-</body>
-</html>
+输入格式第一行三个数字 $n$, $m$, $h$。第二行有 $m$ 个数字 $b_1, b_2, \dots, b_m$。第三行有 $n$ 个数字 $a_1, a_2, \dots, a_n$。
+输出格式输出一个数字，{$a_i$} 有多少个长度为 $m$ 的连续子数列能与 {$b_i$} 匹配。
+数据范围与提示$1 \leq m \leq n \leq 150000$$1 \leq a_i, b_i, h \leq 10^9$
+Solution数据小的话就暴力跑网络流就好了。但是这里是 $10^5$ 就不行了。现在枚举 {$a_i$} 中一段长为 $m$ 的连续子序列，考虑和 {$b_i$} 中的完美匹配。根据Hall定理，一个二分图，分为 $X$ 和 $Y$，存在完美匹配的充要条件为任取 $ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/10/02/Avito-Code-Challenge-2018/" title="Avito Code Challenge 2018">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Avito Code Challenge 2018"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/10/02/Avito-Code-Challenge-2018/" title="Avito Code Challenge 2018">Avito Code Challenge 2018</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-10-01T18:27:33.000Z" title="发表于 2019-10-02 02:27:33">2019-10-02</time></span></div><div class="content">A. Antipalindrome直接暴力判断就行了。
+1234567891011121314151617181920212223242526#include &lt;bits/stdc++.h&gt;using namespace std;const int N = 100;char s[N];bool check(int i, int j) &#123;	while (i &lt;= j) &#123;		if (s[i] != s[j]) return 0;		i++; j--;	&#125;	return 1;&#125;int main() &#123;	scanf("%s", s);	int n = strlen(s);	for (int tail = n - 1; tail &gt;= 0; tail--) &#123;		if (!check(0, tail)) &#123;			printf("%d\n", tail + 1);			return 0;		&#125;	&#125;	puts("0");	return 0;&#125;
+B. Businessmen P ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/09/29/AtCoder-Grand-Contest-020/" title="AtCoder Grand Contest 020">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AtCoder Grand Contest 020"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/09/29/AtCoder-Grand-Contest-020/" title="AtCoder Grand Contest 020">AtCoder Grand Contest 020</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-09-29T13:35:22.000Z" title="发表于 2019-09-29 21:35:22">2019-09-29</time></span></div><div class="content">tourist’s contest…ssfd
+A - Move and Win想不到好的博弈方法，我就直接暴力了…可以确定的是，如果一个人觉得他走这个方向是最优的，那么他肯定会一直走下去。那么就枚举四种情况，第一个人往左（往右），第二个人往左（往右）。当第一个人往左（或往右）时，另一个人怎么走都输时他就能赢，否则他就输了。看了别人的代码，好像判一下 $b - a$ 的奇偶性就行了……….好像是的，因为每个人走完一步之后，之间的差的奇偶性还是不改变。我傻逼了。
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667#include &lt;bits/stdc++.h&gt;using namespace std;int main() &#123;	int n, a, b;	scanf("%d%d%d", &amp;n, &amp;a, &amp;b);	bool ans1 = 0, ans2 = ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/09/29/51nod-1803-%E6%A3%AE%E6%9E%97%E7%9B%B4%E5%BE%84/" title="51nod 1803 森林直径">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="51nod 1803 森林直径"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/09/29/51nod-1803-%E6%A3%AE%E6%9E%97%E7%9B%B4%E5%BE%84/" title="51nod 1803 森林直径">51nod 1803 森林直径</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-09-29T01:26:17.000Z" title="发表于 2019-09-29 09:26:17">2019-09-29</time></span></div><div class="content">1803 森林直径2.0 秒 / 131,072.0 KB / 80 分 / [5级题]
+LYK最近在练习数据结构。
+这次它遇到了一棵有n个节点且没有边权没有点权的树。
+一棵树的直径被定义为最远的两个点的距离，LYK想计算出这棵树的直径，但这显然太简单了。
+于是LYK只挑选出其中编号为L到R的边，将其余边在树中删去，那么这棵树就变成了一棵森林。
+我们定义一棵森林的直径为可到达的最远的两个点的距离。（若没有可到达的点对，则森林的直径为0）。
+LYK想知道对于Q组询问，每组询问给出L和R，这棵森林的直径是多少，为了方便起见，你只需输出所有答案的和就可以了。
+由于LYK不知道怎么生成一棵树，于是它打算采取以下方式输出这棵树的所有边。
+1for (int i=2; i&lt;=n; i++) printf("%d %d\n",rand()%(i-1)+1,i);
+在样例中，4组询问的答案分别为1,2,3,3，因此应当输出9。
+输入第一行一个数n(1&lt;=n&lt;=500000)，表示树的节点个数。接下来n-1行ai与bi，表示编号为i的边所连接的两个节点，按照题目中的输出方式，对于第i条 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2019/09/29/Codechef-July-Challenge-2019-Hit-the-Coconuts/" title="Codechef July Challenge 2019 Hit the Coconuts">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Codechef July Challenge 2019 Hit the Coconuts"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/09/29/Codechef-July-Challenge-2019-Hit-the-Coconuts/" title="Codechef July Challenge 2019 Hit the Coconuts">Codechef July Challenge 2019 Hit the Coconuts</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-09-29T01:10:34.000Z" title="发表于 2019-09-29 09:10:34">2019-09-29</time></span></div><div class="content">Problem StatementNikki has $N$ coconuts, she wants to prepare a special coconut soup for her best friend Mansi. In order to make this soup, she has to break $Z$ coconuts. For each coconut, there is a fixed number of times Nikki needs to hit it if she wants it to break. Nikki can only hit one coconut at the same time.Their friend Sakshi is a troublemaker. This time, Sakshi shuffled the coconuts in some (unknown) way. You are given a sequence $A_1,A_2,…,A_N$ with the following meaning: it is possi ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">xzt220</div><div class="author-info__description">BYR</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">45</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">33</div></a></div><div class="card-info-data-item is-center"><a href="/categories"><div class="headline">分类</div><div class="length_num">2</div></a></div></div><a class="button--animated" id="card-info-btn" href="https://github.com/xxxxxx" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/07/31/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/" title="面试准备"><img class="aside-post-bg" data-lazy-src="/2020/07/31/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/avatar.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="面试准备"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/07/31/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/" title="面试准备">面试准备</a><time class="aside-post_meta post-meta-date" datetime="2020-07-31T03:22:39.000Z" title="发表于 2020-07-31 11:22:39">2020-07-31</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/05/24/Effective-Modern-C-auto/" title="Effective Modern C++ auto"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Effective Modern C++ auto"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/05/24/Effective-Modern-C-auto/" title="Effective Modern C++ auto">Effective Modern C++ auto</a><time class="aside-post_meta post-meta-date" datetime="2020-05-24T13:46:52.000Z" title="发表于 2020-05-24 21:46:52">2020-05-24</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/05/23/Effective-Modern-C/" title="Effective Modern C++ 类型推断"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Effective Modern C++ 类型推断"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/05/23/Effective-Modern-C/" title="Effective Modern C++ 类型推断">Effective Modern C++ 类型推断</a><time class="aside-post_meta post-meta-date" datetime="2020-05-22T16:16:49.000Z" title="发表于 2020-05-23 00:16:49">2020-05-23</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2019/10/04/Tinkoff-Internship-Warmup-Round-2018-and-Codeforces-Round-475-Div-1/" title="Tinkoff Internship Warmup Round 2018 and Codeforces Round #475 (Div. 1)"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Tinkoff Internship Warmup Round 2018 and Codeforces Round #475 (Div. 1)"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2019/10/04/Tinkoff-Internship-Warmup-Round-2018-and-Codeforces-Round-475-Div-1/" title="Tinkoff Internship Warmup Round 2018 and Codeforces Round #475 (Div. 1)">Tinkoff Internship Warmup Round 2018 and Codeforces Round #475 (Div. 1)</a><time class="aside-post_meta post-meta-date" datetime="2019-10-04T13:07:57.000Z" title="发表于 2019-10-04 21:07:57">2019-10-04</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2019/10/03/Educational-Codeforces-Round-47-Rated-for-Div-2-G-Allowed-Letters/" title="Educational Codeforces Round 47 (Rated for Div. 2) G. Allowed Letters"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Educational Codeforces Round 47 (Rated for Div. 2) G. Allowed Letters"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2019/10/03/Educational-Codeforces-Round-47-Rated-for-Div-2-G-Allowed-Letters/" title="Educational Codeforces Round 47 (Rated for Div. 2) G. Allowed Letters">Educational Codeforces Round 47 (Rated for Div. 2) G. Allowed Letters</a><time class="aside-post_meta post-meta-date" datetime="2019-10-03T02:00:21.000Z" title="发表于 2019-10-03 10:00:21">2019-10-03</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/"><span class="card-category-list-name">训练记录</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%A2%98%E8%A7%A3/"><span class="card-category-list-name">题解</span><span class="card-category-list-count">9</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/51nod/" style="font-size: 17.2px; color: #999ca1">51nod</a> <a href="/tags/Atcoder/" style="font-size: 17.2px; color: #999ca1">Atcoder</a> <a href="/tags/BZOJ/" style="font-size: 16px; color: #999">BZOJ</a> <a href="/tags/C/" style="font-size: 17.2px; color: #999ca1">C++</a> <a href="/tags/Codeforces/" style="font-size: 22px; color: #99a9bf">Codeforces</a> <a href="/tags/DP/" style="font-size: 16px; color: #999">DP</a> <a href="/tags/Hall%E5%AE%9A%E7%90%86/" style="font-size: 17.2px; color: #999ca1">Hall定理</a> <a href="/tags/Lucas%E5%AE%9A%E7%90%86/" style="font-size: 16px; color: #999">Lucas定理</a> <a href="/tags/dfs%E5%BA%8F/" style="font-size: 16px; color: #999">dfs序</a> <a href="/tags/to-do-list/" style="font-size: 16px; color: #999">to_do_list</a> <a href="/tags/%E4%B8%BB%E5%B8%AD%E6%A0%91/" style="font-size: 16px; color: #999">主席树</a> <a href="/tags/%E5%88%86%E5%9D%97/" style="font-size: 18.4px; color: #999fa8">分块</a> <a href="/tags/%E5%8D%95%E8%B0%83%E6%A0%88/" style="font-size: 16px; color: #999">单调栈</a> <a href="/tags/%E5%8F%8C%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F/" style="font-size: 16px; color: #999">双连通分量</a> <a href="/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 17.2px; color: #999ca1">可持久化线段树</a> <a href="/tags/%E5%9B%9E%E6%96%87%E6%A0%91/" style="font-size: 16px; color: #999">回文树</a> <a href="/tags/%E5%A0%86/" style="font-size: 16px; color: #999">堆</a> <a href="/tags/%E5%B9%B3%E8%A1%A1%E6%A0%91/" style="font-size: 16px; color: #999">平衡树</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 16px; color: #999">数学</a> <a href="/tags/%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/" style="font-size: 17.2px; color: #999ca1">斜率优化</a> <a href="/tags/%E6%A0%91%E5%BD%A2DP/" style="font-size: 17.2px; color: #999ca1">树形DP</a> <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" style="font-size: 19.6px; color: #99a3b0">树状数组</a> <a href="/tags/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" style="font-size: 16px; color: #999">树链剖分</a> <a href="/tags/%E7%82%B9%E5%88%86%E6%B2%BB/" style="font-size: 16px; color: #999">点分治</a> <a href="/tags/%E7%8A%B6%E5%8E%8BDP/" style="font-size: 16px; color: #999">状压DP</a> <a href="/tags/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/" style="font-size: 16px; color: #999">矩阵乘法</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9F%BA/" style="font-size: 16px; color: #999">线性基</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 20.8px; color: #99a6b7">线段树</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%88%E5%B9%B6/" style="font-size: 16px; color: #999">线段树合并</a> <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/" style="font-size: 16px; color: #999">网络流</a> <a href="/tags/%E8%99%9A%E6%A0%91/" style="font-size: 17.2px; color: #999ca1">虚树</a> <a href="/tags/%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/" style="font-size: 17.2px; color: #999ca1">训练记录</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 16px; color: #999">面试</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/10/"><span class="card-archive-list-date">十月 2019</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/09/"><span class="card-archive-list-date">九月 2019</span><span class="card-archive-list-count">18</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/08/"><span class="card-archive-list-date">八月 2019</span><span class="card-archive-list-count">20</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">45</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By xzt220</div><div class="framework-info"><span>框架 </span><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
